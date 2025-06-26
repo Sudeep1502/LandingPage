@@ -1,0 +1,165 @@
+/* Base Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    line-height: 1.6;
+    color: #333;
+  }
+  
+  /* Header Styles */
+  #header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: #24292e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 5%;
+    z-index: 1000;
+  }
+  
+  #header-img {
+    height: 50px;
+  }
+  
+  #nav-bar {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .nav-link {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+  }
+  .nav-link:hover {
+    text-decoration: underline;
+  }
+  
+  /* Hero Section */
+  #hero {
+    padding: 100px 20px 60px;
+    text-align: center;
+    background: #f2f2f2;
+  }
+  
+  #hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  #video {
+    margin-top: 20px;
+    max-width: 100%;
+  }
+  
+  /* Features Section */
+  #features {
+    padding: 60px 20px;
+    background: #ffffff;
+  }
+  
+  .features-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+  }
+  
+  .feature {
+    flex: 1;
+    min-width: 250px;
+    padding: 20px;
+    background: #f8f8f8;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+  }
+  
+  /* Plans Section */
+  #plans {
+    padding: 60px 20px;
+    background: #f0f4f8;
+    text-align: center;
+  }
+  
+  .plans-flex {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 20px;
+  }
+  
+  .plan {
+    background: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    width: 200px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  }
+  
+  /* Form Section */
+  #subscribe {
+    padding: 60px 20px;
+    text-align: center;
+    background: #e7f0fc;
+  }
+  
+  #form input[type="email"] {
+    padding: 12px;
+    width: 250px;
+    max-width: 80%;
+    margin-right: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  #form input[type="submit"] {
+    padding: 12px 20px;
+    background: #e63946;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  #form input[type="submit"]:hover {
+    background: #d62839;
+  }
+  
+  /* Footer */
+  footer {
+    background: #24292e;
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Media Queries */
+  @media (max-width: 768px) {
+    .features-container, .plans-flex {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    #nav-bar {
+      flex-direction: column;
+      gap: 10px;
+    }
+  
+    #form input[type="email"] {
+      width: 100%;
+      margin-bottom: 10px;
+    }
+  
+    #form input[type="submit"] {
+      width: 100%;
+    }
+  }
+  

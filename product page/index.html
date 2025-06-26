@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GymPower Pro - Fitness For Everyone</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Header Section -->
+  <header id="header">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/1/19/Gold%27s_Gym_logo.svg" alt="Gym Logo" id="header-img">
+    <nav id="nav-bar">
+      <a href="#features" class="nav-link">Features</a>
+      <a href="#plans" class="nav-link">Plans</a>
+      <a href="#subscribe" class="nav-link">Subscribe</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="hero">
+    <h1>Unleash Your Power with GymPower Pro</h1>
+    <p>Train smart. Train hard. Be unstoppable.</p>
+    <iframe 
+      id="video" 
+      width="560" 
+      height="315" 
+      src="https://www.youtube.com/embed/dJlFmxiL11s" 
+      title="YouTube workout video"
+      frameborder="0" 
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+      allowfullscreen>
+    </iframe>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features">
+    <div class="features-container">
+      <div class="feature">
+        <h3>24/7 Gym Access</h3>
+        <p>Work out anytime with keycard access and modern equipment.</p>
+      </div>
+      <div class="feature">
+        <h3>Group Classes</h3>
+        <p>Yoga, HIIT, and more included in your membership.</p>
+      </div>
+      <div class="feature">
+        <h3>Certified Trainers</h3>
+        <p>Get fit with help from professional coaches and nutrition experts.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Plans Section -->
+  <section id="plans">
+    <h2>Choose Your Plan</h2>
+    <div class="plans-flex">
+      <div class="plan">
+        <h3>Basic</h3>
+        <p>$29/month</p>
+      </div>
+      <div class="plan">
+        <h3>Standard</h3>
+        <p>$49/month</p>
+      </div>
+      <div class="plan">
+        <h3>Premium</h3>
+        <p>$79/month</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Subscription Form -->
+  <section id="subscribe">
+    <h2>Stay Updated</h2>
+    <form id="form" action="https://www.freecodecamp.com/email-submit" method="POST">
+      <input 
+        type="email" 
+        id="email" 
+        name="email" 
+        placeholder="Enter your email address" 
+        required 
+      />
+      <input type="submit" id="submit" value="Subscribe" />
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 GymPower Pro. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
